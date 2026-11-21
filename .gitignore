@@ -1,0 +1,18 @@
+# Simulation and synthesis build output
+build/
+*.cf
+*.o
+work-obj*.cf
+*.ghw
+*.vcd
+*.fst
+
+# Local tools and caches
+__pycache__/
+.env
+.env.*
+*.pem
+*.key
+.vscode/*
+.idea/
+.DS_Store
