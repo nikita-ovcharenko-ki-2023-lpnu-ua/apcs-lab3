@@ -1,0 +1,44 @@
+[*] SPI mode 3 (CPOL=1, CPHA=1): transfer 0xA5 / 0x5A
+[dumpfile] "build/sim/tb_spi_master.ghw"
+[timestart] 80000000
+[size] 1900 1000
+[pos] -1 -1
+*-27.900000 80000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 1
+[signals_width] 360
+@28
+top.tb_spi_master.clk
+@28
+top.tb_spi_master.rst
+@28
+top.tb_spi_master.g_mode[3].start
+@22
+top.tb_spi_master.g_mode[3].tx_data[7:0]
+@28
+top.tb_spi_master.g_mode[3].busy
+@28
+top.tb_spi_master.g_mode[3].u_dut.u_tx.state
+@24
+top.tb_spi_master.g_mode[3].u_dut.u_tx.edge_cnt
+@24
+top.tb_spi_master.g_mode[3].u_dut.u_tx.bit_idx
+@28
+top.tb_spi_master.g_mode[3].ss_n
+@28
+top.tb_spi_master.g_mode[3].sclk
+@28
+top.tb_spi_master.g_mode[3].mosi
+@28
+top.tb_spi_master.g_mode[3].miso
+@28
+top.tb_spi_master.g_mode[3].u_dut.sample
+@22
+top.tb_spi_master.g_mode[3].u_dut.u_rx.shift_reg[7:0]
+@28
+top.tb_spi_master.g_mode[3].rx_valid
+@22
+top.tb_spi_master.g_mode[3].rx_data[7:0]
+@28
+top.tb_spi_master.g_mode[3].done
+@22
+top.tb_spi_master.g_mode[3].slave_rx[7:0]
