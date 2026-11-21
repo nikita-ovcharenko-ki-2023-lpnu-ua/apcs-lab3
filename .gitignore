@@ -16,3 +16,7 @@ __pycache__/
 .vscode/*
 .idea/
 .DS_Store
+
+# GHDL executables (LLVM/GCC backend)
+/tb_spi_master
+e~*.o
