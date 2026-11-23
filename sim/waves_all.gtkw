@@ -1,0 +1,54 @@
+[*] SPI bus in all four modes
+[dumpfile] "build/sim/tb_spi_master.ghw"
+[timestart] 0
+[size] 1900 1000
+*-31.300000 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 360
+@200
+-mode 0: CPOL=0, CPHA=0
+@28
+top.tb_spi_master.g_mode[0].ss_n
+@28
+top.tb_spi_master.g_mode[0].sclk
+@28
+top.tb_spi_master.g_mode[0].mosi
+@28
+top.tb_spi_master.g_mode[0].miso
+@22
+top.tb_spi_master.g_mode[0].rx_data[7:0]
+@200
+-mode 1: CPOL=0, CPHA=1
+@28
+top.tb_spi_master.g_mode[1].ss_n
+@28
+top.tb_spi_master.g_mode[1].sclk
+@28
+top.tb_spi_master.g_mode[1].mosi
+@28
+top.tb_spi_master.g_mode[1].miso
+@22
+top.tb_spi_master.g_mode[1].rx_data[7:0]
+@200
+-mode 2: CPOL=1, CPHA=0
+@28
+top.tb_spi_master.g_mode[2].ss_n
+@28
+top.tb_spi_master.g_mode[2].sclk
+@28
+top.tb_spi_master.g_mode[2].mosi
+@28
+top.tb_spi_master.g_mode[2].miso
+@22
+top.tb_spi_master.g_mode[2].rx_data[7:0]
+@200
+-mode 3: CPOL=1, CPHA=1
+@28
+top.tb_spi_master.g_mode[3].ss_n
+@28
+top.tb_spi_master.g_mode[3].sclk
+@28
+top.tb_spi_master.g_mode[3].mosi
+@28
+top.tb_spi_master.g_mode[3].miso
+@22
+top.tb_spi_master.g_mode[3].rx_data[7:0]

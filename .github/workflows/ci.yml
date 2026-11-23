@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, master]
+  pull_request:
+    branches: [develop, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  simulation:
+    name: GHDL simulation (4 SPI modes)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Install GHDL
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ghdl
+
+      - name: Run testbench
+        run: bash ./sim/run_sim.sh
+
+      - name: Upload waveforms
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: waveforms
+          path: build/sim/
+          if-no-files-found: error
+          retention-days: 30
